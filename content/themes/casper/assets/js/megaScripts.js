@@ -137,7 +137,7 @@
 		})
 		infoBlock.velocity({
 			'top':'-110%'
-		}, 700)
+		}, 1300)
 		opacityBlock.velocity({
 			'top':'100%'
 		}, 700)
