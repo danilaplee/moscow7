@@ -1,0 +1,85 @@
+body
+{
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+.info-block,
+.opacity-block
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 100%;
+	z-index:-1;
+}
+.info-block
+{
+	background:#fff;
+	z-index:1;
+	height:80%;
+	top:-110%;
+	min-width: 300px;
+}
+.info-block .panel .panel-heading
+{
+	background: rgba(0,0,0,0.2);
+	color: rgba(0,0,0,0.8);
+}
+.info-block .panel .panel-body
+{
+	color: rgba(0,0,0, 0.9);
+	overflow: scroll;
+	height: 100%;
+}
+.info-block .panel small
+{
+	color: rgba(0,0,0,0.7);
+}
+.info-block .panel
+{
+	height: 100%;
+	width:50%;
+	margin: 10px auto;
+	background: #fff;
+	min-width: 300px;
+	min-height: 200px;
+}
+#logo
+{
+	margin:0 auto; 
+	margin-top:-20px; 
+	min-width:320px;
+	min-height:360px;
+	height: 80%;
+	width: 70%;
+	display: block;
+	max-width: 1000px;
+}
+.column-container
+{
+	position: relative;
+	margin:0 auto;
+	width:100%;
+	max-width: 800px;
+	z-index: 1000;
+	opacity: 1;
+	overflow: scroll;
+}
+.modal-body
+{
+	overflow: scroll;
+}
+a,
+a:hover 
+{
+	text-decoration: none;
+	color:#fff;
+}
+#instafeed
+{
+	width: auto;
+	margin: 0 auto;
+	display: block;
+    max-width: 600px;
+}
