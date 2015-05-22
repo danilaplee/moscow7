@@ -78,8 +78,11 @@ a:hover
 }
 #instafeed
 {
-	width: auto;
 	margin: 0 auto;
 	display: block;
-    max-width: 600px;
+    width: 100%;
+}
+#istafeed img 
+{
+	width: 200px;
 }
