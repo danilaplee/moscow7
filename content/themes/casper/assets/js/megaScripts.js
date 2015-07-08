@@ -34,14 +34,15 @@
 		var letters = logo.selectAll('.letter-self.'+name)
 		var infoBlock = $('.info-block.'+name);
 		var blocks = $('.info-block').not(infoBlock);
+		// console.log('scaleUp');
 		letters.forEach(function(l)
 		{
 			l.animate({
-				'transform':'scale(1) rotate(180deg)'
+				// 'transform':'rotate(180deg)'
 			}, timer+600, mina.easeinout)
 		})
 		el.animate({
-			'transform':'scale(1) rotate(180deg)'
+			// 'transform':'rotate(180deg)'
 		}, timer+600, mina.easeinout)
 
 		var other = [];
@@ -60,7 +61,7 @@
 			'top':'210%'
 		}, 800)
 		infoBlock.velocity({
-			'top':'30%'
+			'top':'10%'
 		}, 700)
 		opacityBlock.velocity({
 			'top':0
@@ -70,15 +71,16 @@
 	{
 		var name = el.node.classList[1];
 		var letters = logo.selectAll('.letter-self.'+name)
-		letters.forEach(function(l)
-		{
-			l.animate({
-				'transform':'scale(0.3)'
-			}, timer+600, mina.easeinout)
-		})
-		el.animate({
-				'transform':'scale(0.3)'
-		}, timer+600, mina.easeinout)
+		document.getElementById('background-area').setAttribute('style','display:block');
+		// letters.forEach(function(l)
+		// {
+		// 	l.animate({
+		// 		'transform':''
+		// 	}, timer+600, mina.easeinout)
+		// })
+		// el.animate({
+		// 		'transform':''
+		// }, timer+600, mina.easeinout)
 	}
 	var bindActions = function()
 	{
@@ -86,10 +88,11 @@
 		{
 			circle.click(function()
 			{
-				if(circle.node.classList[1] == 'letter-center')
+				if(circle.node.classList[1] == 'letter-o-two')
 				{
-					console.log('center');
-					resetState();
+					var _url = 'https://www.facebook.com/osseventysix'
+					var win = window.open(_url, '_blank');
+					win.focus();
 				}
 				else
 				{
@@ -98,11 +101,11 @@
 			})
 			circle.mouseover(function()
 			{
-				recolor(circle,'#fff', '#000');
+				recolor(circle,'#000', '#fff');
 			});
 			circle.mouseout(function()
 			{
-				recolor(circle,'#000', '#fff');
+				recolor(circle,'#fff', '#000');
 			});
 		});
 	}
@@ -142,8 +145,11 @@
 			'top':'100%'
 		}, 700)
 	}
-	$('.close').bind('click', function()
+	var closeUp = function()
 	{
 		$('.modal').hide()
 		resetState();
-	})
+		document.getElementById('background-area').setAttribute('style','display:none');
+	}
+	$(".background-area").bind('click', closeUp)
+	$('.close').bind('click', closeUp)

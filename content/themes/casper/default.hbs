@@ -41,7 +41,10 @@
         var feed = new Instafeed({
             get: 'tagged',
             tagName: 'MOSCOW7',
-            clientId: 'e6916caa128b4e2cad51fa0030f5e9c8'
+            clientId: 'e6916caa128b4e2cad51fa0030f5e9c8',
+            resolution:'low_resolution',
+            limit:60,
+            sortBy:'most-recent'
         });
         feed.run();
     </script>

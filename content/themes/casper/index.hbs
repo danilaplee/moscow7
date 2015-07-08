@@ -2,6 +2,8 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
 {{! The big featured header }}
+<div class="background-area" id="background-area">
+</div>
 <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="107%" viewBox="0 0 1573.23 1573.23" enable-background="new 0 0 1573.23 1573.23" xml:space="preserve">
     <path fill="none" stroke="#46629E" stroke-width="0.4252" stroke-miterlimit="10" d="M884.327,786.224
         c0,53.979-43.759,97.738-97.743,97.738c-53.982,0-97.739-43.759-97.739-97.738c0-53.981,43.757-97.737,97.739-97.737
@@ -264,7 +266,7 @@
     </div>
 </div>
 
-<div class="info-block letter-o-two">
+<div class="info-block letter-center">
     <div class="panel panel-default">
 
         <div class="panel-heading">
@@ -277,9 +279,9 @@
                  <article class="{{post_class}}">
                     <header class="post-header">
                         <h4 class="post-title">{{title}}</h4>
-                        <section class="post-meta">
+                        {{!-- <section class="post-meta">
                             <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-                        </section>
+                        </section> --}}
                     </header>
 
                     <section class="post-content">
