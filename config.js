@@ -10,7 +10,7 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://178.62.172.31:8000',
+        url: 'http://seven.moscow',
         mail: {
              transport: 'SMTP',
              options: {
@@ -26,9 +26,8 @@ config = {
             connection: {
                 filename: path.join(__dirname, '/content/data/ghost.db')
             },
-            debug: true
+            debug: false
         },
-
         server: {
             // Host to be passed to node's `net.Server#listen()`
             host: '0.0.0.0',
