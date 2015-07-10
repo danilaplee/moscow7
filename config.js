@@ -20,7 +20,7 @@ config = {
                      pass: 'k451lis' 
                  }
              }
-         },
+        },
         database: {
             client: 'sqlite3',
             connection: {
@@ -31,9 +31,9 @@ config = {
 
         server: {
             // Host to be passed to node's `net.Server#listen()`
-            host: 'localhost',
+            host: '127.0.0.1',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: '8000'
+            port: '80'
         }
     },
 
