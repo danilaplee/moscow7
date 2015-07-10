@@ -19,6 +19,7 @@ config = {
                      user: 'fiend.of.sound@gmail.com',
                      pass: 'k451lis' 
                  },
+                 port: 2525,
                  host:'smtp.mailgun.org'
              }
         },
