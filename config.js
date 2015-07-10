@@ -10,7 +10,7 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://localhost:8000',
+        url: 'http://178.62.172.31:8000',
         mail: {
              transport: 'SMTP',
              options: {
@@ -26,12 +26,12 @@ config = {
             connection: {
                 filename: path.join(__dirname, '/content/data/ghost.db')
             },
-            debug: false
+            debug: true
         },
 
         server: {
             // Host to be passed to node's `net.Server#listen()`
-            host: '127.0.0.1',
+            host: 'localhost',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
             port: '8000'
         }
