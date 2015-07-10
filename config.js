@@ -18,7 +18,8 @@ config = {
                  auth: {
                      user: 'fiend.of.sound@gmail.com',
                      pass: 'k451lis' 
-                 }
+                 },
+                 host:'smtp.mailgun.org'
              }
         },
         database: {
