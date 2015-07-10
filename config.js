@@ -15,11 +15,11 @@ config = {
              transport: 'SMTP',
              options: {
                  service: 'Mailgun',
-                 auth: {
-                     user: 'fiend.of.sound@gmail.com',
-                     pass: 'k451lis' 
-                 },
                  port: 2525,
+                 auth: {
+                     user: 'postmaster@seven.moscow',
+                     pass: 'f2db1a709d714b776eed00da461dbcb3' 
+                 },
                  host:'smtp.mailgun.org'
              }
         },
